@@ -9,11 +9,12 @@ const Contact = ({ setSent }) => {
 	const form = useRef();
 
 	const sendEmail = (e) => {
-		swal("Good job!", "Email send successfully!", "success");
 		e.preventDefault();
 		emailjs.sendForm('service_wkteyb4', 'template_kn2soop', form.current, 'user_b4OtGcHQRyas1bN3hRaBM')
 			.then((result) => {
-				console.log(result.text);
+				if (result?.status === 200) {
+					swal("Good job!", "Email send successfully!", "success");
+				}
 			}, (error) => {
 				console.log(error.text);
 			});
