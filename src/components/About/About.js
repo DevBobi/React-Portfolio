@@ -53,7 +53,7 @@ const About = () => {
 							className="social-item"
 						>
 							<a
-								href="https://www.linkedin.com/in/md-saifur-rahaman-458482216/"
+								href="www.linkedin.com/in/mdsaifurrahaman"
 								target="_blank"
 								className="social-link"
 							>
