@@ -20,7 +20,6 @@ import mongoDb from "./images/mongoDb.png";
 import js from "./images/js.svg";
 import nodejs from "./images/nodejs.png";
 import { ReactComponent as Arrow } from "./images/ArrowTop.svg";
-import Popup from "./components/Popup";
 
 function App() {
 	const [loading, setLoading] = useState(false);
@@ -34,17 +33,10 @@ function App() {
 	const [scrollActive, setScrollActive] = useState(false);
 	const [sent, setSent] = useState(false);
 
-	useEffect(() => {
-		setTimeout(closePopup, 4000);
-	}, [sent]);
-
 	const scrollToTop = () => {
 		scroll.scrollToTop();
 	};
 
-	const closePopup = () => {
-		setSent(false);
-	};
 
 	return (
 		<div >
@@ -135,9 +127,6 @@ function App() {
 									<Arrow />
 								</ScrollTop>
 							)}
-						</AnimatePresence>
-						<AnimatePresence>
-							{sent && <Popup closePopup={closePopup} />}
 						</AnimatePresence>
 						<Footer />
 					</div>

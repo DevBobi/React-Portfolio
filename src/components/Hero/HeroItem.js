@@ -8,7 +8,7 @@ const HeroItem = () => {
 
 	return (
 		<div >
-			<div className="hero-item" style={{ marginTop: 70 }}>
+			<div id="tsparticles" className="hero-item" style={{ marginTop: 70 }}>
 				<Typist
 					avgTypingDelay={100}
 					className="typist"
