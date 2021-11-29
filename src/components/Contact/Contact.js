@@ -13,8 +13,9 @@ const Contact = ({ setSent }) => {
 		emailjs.sendForm('service_wkteyb4', 'template_kn2soop', form.current, 'user_b4OtGcHQRyas1bN3hRaBM')
 			.then((result) => {
 				if (result?.status === 200) {
-					swal("Good job!", "Email send successfully!", "success");
+					swal("Good job!", "Email sent successfully!", "success");
 				}
+				e.target.reset()
 			}, (error) => {
 				console.log(error.text);
 			});
@@ -29,8 +30,15 @@ const Contact = ({ setSent }) => {
 				<form className="contact-form" ref={form} onSubmit={sendEmail}>
 					<input
 						type="text"
-						name="user_name"
+						name="name"
 						placeholder="Your name"
+						className="form-control"
+						required
+					/>
+					<input
+						type="email"
+						name="email"
+						placeholder="Your email"
 						className="form-control"
 						required
 					/>
@@ -41,15 +49,9 @@ const Contact = ({ setSent }) => {
 						className="form-control"
 						required
 					/>
-					<input
-						type="email"
-						name="user_email"
-						placeholder="Your email"
-						className="form-control"
-						required
-					/>
 					<textarea
 						type="submit"
+						name="message"
 						id="message"
 						className="form-control"
 						cols="30"
