@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="https://img.icons8.com/bubbles/50/000000/monitor.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="#000000" />
+	<meta name="description" content="Web site created using create-react-app" />
+	<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+	<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link rel="stylesheet" type="text/css" charset="UTF-8"
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+	<title>DevBobi</title>
+</head>
+<style>
+	#_progress {
+		--scroll: 0%;
+		background: linear-gradient(to right,
+				rgb(0, 143, 105) var(--scroll),
+				transparent 0);
+		position: fixed;
+		width: 100%;
+		height: 5px;
+		top: 0px;
+		z-index: 101;
+	}
+</style>
+
+<body>
+	<div id="_progress"></div>
+	<div id="root" style="height: 2000px"></div>
+	<script>
+		document.addEventListener(
+			"scroll",
+			function () {
+				var scrollTop =
+					document.documentElement["scrollTop"] || document.body["scrollTop"];
+				var scrollBottom =
+					(document.documentElement["scrollHeight"] ||
+						document.body["scrollHeight"]) -
+					document.documentElement.clientHeight;
+				scrollPercent = (scrollTop / scrollBottom) * 100 + "%";
+				document
+					.getElementById("_progress")
+					.style.setProperty("--scroll", scrollPercent);
+			},
+			{ passive: true }
+		);
+	</script>
+</body>
+
+</html>

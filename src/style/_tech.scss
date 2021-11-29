@@ -1,0 +1,127 @@
+// #tech {
+// 	padding: 2rem 1rem;
+// 	.tech-wrapper {
+// 		display: flex;
+// 		margin: 0 auto;
+// 		align-items: center;
+// 		background: red;
+
+// 		.tech-item {
+// 			display: flex;
+// 			width: fit-content;
+// 			color: red;
+// 		}
+// 	}
+// }
+
+#tech {
+	padding: 3rem 1rem;
+	.tech-wrapper {
+		margin: 0 auto;
+		text-align: center;
+
+		.tech-header {
+			font-size: 3em;
+			color: gray;
+			font-weight: lighter;
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+
+		.tech-box {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			margin-bottom: 1rem;
+
+			.tech-card {
+				display: flex;
+				flex-direction: column;
+				max-width: 300px;
+				margin: 0 auto;
+				margin-bottom: 2rem;
+
+				.frontend {
+					font-size: 3rem;
+					color: rgba(201, 204, 255, 0.7);
+					animation: frontend 3s linear alternate infinite;
+
+					@keyframes frontend {
+						0% {
+							transform: translateY(-10%);
+						}
+						50% {
+							transform: translateY(0%);
+						}
+						100% {
+							transform: translateY(10%);
+						}
+					}
+
+					svg {
+						vertical-align: middle;
+					}
+				}
+
+				.backend {
+					font-size: 3rem;
+					color: rgba(201, 204, 255, 0.7);
+					animation: backend 3s linear alternate-reverse infinite;
+
+					@keyframes backend {
+						0% {
+							transform: rotate(0deg);
+						}
+						100% {
+							transform: rotate(360deg);
+						}
+					}
+
+					svg {
+						vertical-align: middle;
+					}
+				}
+
+				.card-header {
+					font-size: 22px;
+					font-weight: lighter;
+					color: gray;
+					margin-bottom: 1.2rem;
+				}
+
+				.card-text {
+					font-size: 18px;
+					color: gray;
+
+					&:hover {
+						color: rgb(150, 143, 143);
+					}
+				}
+			}
+
+			@media screen and (max-width: 500px) {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		.tech-item {
+			width: fit-content;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 2rem;
+			margin: 0 auto;
+
+			.tech-icon {
+				font-size: 4rem;
+				color: rgba(34, 39, 135, 0.7);
+				color: rgba(201, 204, 255, 0.7);
+			}
+
+			.tech-icon-text {
+				color: gray;
+				font-weight: lighter;
+				font-size: 2rem;
+			}
+		}
+	}
+}
