@@ -1,20 +1,18 @@
 import React, { useEffect, useState } from "react";
 import ProjectItem from "./ProjectItem";
 import axios from "axios";
+import Projectdata from "./ProjectData";
 
 const Project = () => {
-	const [data, setData] = useState([]);
+	const [data, setData] = useState(Projectdata);
 
-	useEffect(() => {
-		const getProjectList = async () => {
-			const res = await axios.get("http://127.0.0.1:8000/api/project-list/");
-			if (res.status === 200) {
-				setData(res.data);
-			}
-		};
+	const filterdProject = (category) => {
+		const filterdCategory = Projectdata.filter(currentItem => {
+			return (currentItem.category === category)
+		})
+		setData(filterdCategory)
 
-		getProjectList();
-	}, []);
+	}
 
 	console.log(data);
 
@@ -28,8 +26,8 @@ const Project = () => {
 							key={index}
 							title={item.title}
 							image={item.image}
-							visitURL={item.visi_link}
-							gitURL={item.git_link}
+							visitURL={item.demo}
+							gitURL={item.github}
 						/>
 					))}
 				</div>

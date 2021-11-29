@@ -1,7 +1,7 @@
 import React from "react";
 import { BsCode } from "react-icons/bs";
 import { AiOutlineEye } from "react-icons/ai";
-// import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const ProjectItem = ({ image, title, gitURL, visitURL }) => {
 	return (
