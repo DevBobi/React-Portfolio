@@ -1,36 +1,23 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import axios from "axios";
 import { ReactComponent as Message } from "./Message.svg";
 import { ReactComponent as Arrow } from "./Arrow.svg";
+import emailjs from 'emailjs-com';
+import swal from 'sweetalert';
 
 const Contact = ({ setSent }) => {
-	const [data, setData] = useState({
-		username: "",
-		subject: "",
-		email: "",
-		message: "",
-	});
+	const form = useRef();
 
-	const handleChange = (e) => {
-		setData({ ...data, [e.target.name]: e.target.value });
-	};
-
-	const handleSend = (e) => {
+	const sendEmail = (e) => {
+		swal("Good job!", "Email send successfully!", "success");
 		e.preventDefault();
-
-		axios
-			.post("http://127.0.0.1:8000/api/contact/", data)
-			.then((res) => {
-				if (res.status === 200) {
-					setSent(true);
-					setData({ username: "", subject: "", email: "", message: "" });
-				} else {
-					setSent(false);
-				}
-			})
-			.catch((err) => console.log(err));
+		emailjs.sendForm('service_wkteyb4', 'template_kn2soop', form.current, 'user_b4OtGcHQRyas1bN3hRaBM')
+			.then((result) => {
+				console.log(result.text);
+			}, (error) => {
+				console.log(error.text);
+			});
 	};
-
 	return (
 		<section id="contact">
 			<h2 className="contact-header">Write me</h2>
@@ -38,50 +25,44 @@ const Contact = ({ setSent }) => {
 				<Message />
 			</span>
 			<div className="form-wrapper">
-				<form className="contact-form" onSubmit={handleSend}>
+				<form className="contact-form" ref={form} onSubmit={sendEmail}>
 					<input
 						type="text"
-						name="username"
-						value={data.username}
+						name="user_name"
 						placeholder="Your name"
 						className="form-control"
 						required
-						onChange={handleChange}
 					/>
 					<input
 						type="text"
 						name="subject"
-						value={data.subject}
 						placeholder="Subject"
 						className="form-control"
 						required
-						onChange={handleChange}
 					/>
 					<input
 						type="email"
-						name="email"
-						value={data.email}
+						name="user_email"
 						placeholder="Your email"
 						className="form-control"
 						required
-						onChange={handleChange}
 					/>
 					<textarea
-						name="message"
+						type="submit"
 						id="message"
-						value={data.message}
 						className="form-control"
 						cols="30"
 						rows="6"
 						placeholder="Your message"
 						required
-						onChange={handleChange}
+
 					></textarea>
 					<button className="btn-send">
 						Send message <Arrow />
 					</button>
 				</form>
 			</div>
+
 		</section>
 	);
 };

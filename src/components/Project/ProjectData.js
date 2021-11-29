@@ -25,15 +25,6 @@ const Projectdata = [
         demo: 'https://ecstatic-euclid-d47142.netlify.app/',
         github: 'https://github.com/DevBobi/TourX-Client-ReactJS',
         category: 'react'
-    },
-    {
-        id: 3,
-        image: 'https://i.ibb.co/yV27ckJ/screencapture-ecstatic-euclid-d47142-netlify-app-2021-11-29-19-36-52.png',
-        title: 'TechEdu',
-        tech: 'React, API,Material-UI',
-        demo: 'https://dental-care-fe92c.web.app/',
-        github: 'https://github.com/DevBobi/Dental-Clinic-ReactJS',
-        category: 'react'
     }
 
 ]
