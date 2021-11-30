@@ -1,6 +1,6 @@
 import React, { useRef, useState, useLayoutEffect } from "react";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
-import { AiOutlineTwitter, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiOutlineInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import { FaFacebookF } from "react-icons/fa";
 
 const About = () => {
@@ -19,22 +19,22 @@ const About = () => {
 		<section id="about">
 			<motion.div ref={ref} className="about-img" style={{ y: y }}>
 				<img
-					src="https://miro.medium.com/max/6300/1*Z7boPZktSNmP5P8uqDzqBQ.jpeg"
-					alt="code"
+					src="https://i.ibb.co/RNCYjKx/Pics-Art-08-06-01-05-03.jpg"
+					alt="bobi"
 				/>
 			</motion.div>
 			<motion.div className="about-info">
 				<h1 className="info-text-bold">ABOUT</h1>
 				<h3 className="info-text">
 					Hello! My name is Md Saifur Rahaman. I am a web developer. I have a diverse
-					set of skill, ranging from HTML + CSS + Javascript + React, all the
+					set of skill, ranging from HTML, CSS, Javascript, React and all the
 					way to Express & MongoDB.
 				</h3>
 
 				<div className="social">
 					<h3 className="social-text">Join me on my platforms</h3>
 					<ul className="social-group">
-						{/* <motion.li
+						<motion.li
 							whileHover={{
 								y: -6,
 								boxShadow: "0px 0px 10px rgba(200, 200, 200, .4)",
@@ -42,9 +42,9 @@ const About = () => {
 							className="social-item"
 						>
 							<a href="#" className="social-link">
-								<AiOutlineTwitter />
+								<AiOutlineInstagram />
 							</a>
-						</motion.li> */}
+						</motion.li>
 						<motion.li
 							whileHover={{
 								y: -6,

@@ -59,6 +59,7 @@ function App() {
 								"particles": {
 									"number": {
 										"value": 50
+
 									},
 									"size": {
 										"value": 3

@@ -1,7 +1,6 @@
 import React from "react";
 import { BsCode } from "react-icons/bs";
 import { AiOutlineEye } from "react-icons/ai";
-import { motion } from "framer-motion";
 
 const ProjectItem = ({ image, title, gitURL, visitURL }) => {
 	return (
@@ -9,7 +8,6 @@ const ProjectItem = ({ image, title, gitURL, visitURL }) => {
 			<div className="project-item">
 				<div className="project-img">
 					<img src={image} alt={title} />
-					<div className="img-overlay"></div>
 				</div>
 				<h3 className="project-title">{title}</h3>
 				<div className="project-control">

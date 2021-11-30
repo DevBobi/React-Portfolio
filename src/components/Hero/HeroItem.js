@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { Button } from "react-bootstrap";
 import Typist from "react-typist";
-
 const resumeLink = "https://drive.google.com/file/d/1Hwg0NPynGtaqBzDbqpitgVG3n_OSWvsv/view?usp=sharing";
 
 const HeroItem = () => {
@@ -34,14 +33,17 @@ const HeroItem = () => {
 						</span>{" "}
 						Developer
 					</h2> <br />
-					<a role="button" href={resumeLink} target="_blank">
-						<Button size="sm" variant="outline-info">
-							View My Resume
+					<a
+						role="button" href={resumeLink}
+						target="_blank">
+						<Button size="sm"
+							variant="outline-info">
+							My Resume
 						</Button>
 					</a>
 				</Typist>
 			</div>
-		</div>
+		</div >
 	);
 };
 
