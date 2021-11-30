@@ -1,7 +1,7 @@
 const Projectdata = [
     {
         id: 1,
-        image: 'https://i.ibb.co/0tFCzjy/screencapture-sneak-hub-web-app-2021-11-29-19.png',
+        image: 'https://i.ibb.co/3WcPbWg/SneakHub.jpg',
         title: 'SneakHub',
         tech: 'React,Next JS,Tailwind CSS,Next-auth,Firebase,Stripe',
         demo: 'https://sneak-hub.web.app/',
@@ -10,7 +10,7 @@ const Projectdata = [
     },
     {
         id: 2,
-        image: 'https://i.ibb.co/vXjyxBX/screencapture-tour-x-40f10-web-app.png',
+        image: 'https://i.ibb.co/h8kFYRY/TechEdu.jpg',
         title: 'TourX',
         tech: 'React, API,Material-UI',
         demo: 'https://tour-x-40f10.web.app/',
@@ -19,11 +19,20 @@ const Projectdata = [
     },
     {
         id: 3,
-        image: 'https://i.ibb.co/yV27ckJ/screencapture-ecstatic-euclid-d47142-netlify-app-2021-11-29-19-36-52.png',
+        image: 'https://i.ibb.co/1RH6q28/Tour-X.jpg',
         title: 'TechEdu',
         tech: 'React, API,Material-UI',
         demo: 'https://ecstatic-euclid-d47142.netlify.app/',
         github: 'https://github.com/DevBobi/TourX-Client-ReactJS',
+        category: 'react'
+    },
+    {
+        id: 3,
+        image: 'https://i.ibb.co/4JGdvj8/Denta.jpg',
+        title: 'Denta',
+        tech: 'React, API,Material-UI',
+        demo: 'https://dental-care-fe92c.web.app/',
+        github: 'https://github.com/DevBobi/Dental-Clinic-ReactJS',
         category: 'react'
     }
 
