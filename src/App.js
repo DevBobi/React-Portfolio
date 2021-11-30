@@ -57,12 +57,18 @@ function App() {
 							canvasClassName="particles-canvas"
 							params={{
 								"particles": {
+									"color": {
+										"value": "#ad0057"
+									},
+									"line_linked": {
+										"color": "#78003c"
+									},
 									"number": {
 										"value": 50
 
 									},
 									"size": {
-										"value": 3
+										"value": 4
 									}
 								},
 								"interactivity": {
