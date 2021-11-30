@@ -4,7 +4,10 @@ import { AiOutlineEye } from "react-icons/ai";
 
 const ProjectItem = ({ image, title, gitURL, visitURL }) => {
 	return (
-		<div className="project-item-wrap">
+		<div
+			data-aos="fade-up"
+			data-aos-anchor-placement="top-center"
+			className="project-item-wrap">
 			<div className="project-item">
 				<div className="project-img">
 					<img src={image} alt={title} />

@@ -25,7 +25,9 @@ const Contact = ({ setSent }) => {
 			<span>
 				<Message />
 			</span>
-			<div className="form-wrapper">
+			<div className="form-wrapper"
+
+			>
 				<form className="contact-form" ref={form} onSubmit={sendEmail}>
 					<input
 						type="text"

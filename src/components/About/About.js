@@ -17,13 +17,17 @@ const About = () => {
 
 	return (
 		<section id="about">
-			<motion.div ref={ref} className="about-img" style={{ y: y }}>
+			<motion.div ref={ref}
+				data-aos="zoom-in-right"
+				className="about-img" style={{ y: y }}>
 				<img
 					src="https://i.ibb.co/RNCYjKx/Pics-Art-08-06-01-05-03.jpg"
 					alt="bobi"
 				/>
 			</motion.div>
-			<motion.div className="about-info">
+			<motion.div
+				className="about-info"
+				data-aos="zoom-in-left">
 				<h1 className="info-text-bold">ABOUT</h1>
 				<h3 className="info-text">
 					Hello! My name is Md Saifur Rahaman. I am a web developer. I have a diverse
