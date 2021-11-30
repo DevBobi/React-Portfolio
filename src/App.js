@@ -17,7 +17,6 @@ import "./style/style.scss";
 import { ReactComponent as Arrow } from "./images/ArrowTop.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { animation } from "./Profile";
 
 
 function App() {
@@ -35,16 +34,6 @@ function App() {
 	const scrollToTop = () => {
 		scroll.scrollToTop();
 	};
-
-	useEffect(() => {
-		AOS.init({
-			duration: animation.duration,
-			once: animation.once,
-			disable: !animation.animate,
-		});
-
-	}, []);
-
 
 	return (
 		<div >
@@ -66,6 +55,24 @@ function App() {
 						<Particles
 							className="particles-wrapper"
 							canvasClassName="particles-canvas"
+							params={{
+								"particles": {
+									"number": {
+										"value": 50
+									},
+									"size": {
+										"value": 3
+									}
+								},
+								"interactivity": {
+									"events": {
+										"onhover": {
+											"enable": true,
+											"mode": "repulse"
+										}
+									}
+								}
+							}}
 						/>
 						<Hero />
 						<Project />
