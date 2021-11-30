@@ -7,7 +7,7 @@ const HeroItem = () => {
 
 	return (
 		<div >
-			<div id="tsparticles" className="hero-item" style={{ marginTop: 70 }}>
+			<div className="hero-item" style={{ marginTop: 70 }}>
 				<Typist
 					avgTypingDelay={100}
 					className="typist"
@@ -36,7 +36,8 @@ const HeroItem = () => {
 					<a
 						role="button" href={resumeLink}
 						target="_blank">
-						<Button size="sm"
+						<Button
+							className="btn-send"
 							variant="outline-info">
 							My Resume
 						</Button>

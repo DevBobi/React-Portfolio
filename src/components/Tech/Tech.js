@@ -57,7 +57,7 @@ const Tech = () => {
 
 				<h2 className="tech-header">Technologies I Use</h2>
 
-				<div className="tech-box">
+				<div className="tech-box" >
 					<div className="tech-card">
 						<span className="frontend">
 							<MdWebAsset />

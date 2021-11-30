@@ -1,10 +1,10 @@
-import React, { useRef, useState } from "react";
+import React, { useRef } from "react";
 import { ReactComponent as Message } from "./Message.svg";
 import { ReactComponent as Arrow } from "./Arrow.svg";
 import emailjs from 'emailjs-com';
 import swal from 'sweetalert';
 
-const Contact = ({ setSent }) => {
+const Contact = () => {
 	const form = useRef();
 
 	const sendEmail = (e) => {

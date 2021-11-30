@@ -45,17 +45,6 @@ const About = () => {
 							}}
 							className="social-item"
 						>
-							<a href="#" className="social-link">
-								<AiOutlineInstagram />
-							</a>
-						</motion.li>
-						<motion.li
-							whileHover={{
-								y: -6,
-								boxShadow: "0px 0px 10px rgba(200, 200, 200, .4)",
-							}}
-							className="social-item"
-						>
 							<a
 								href="www.linkedin.com/in/mdsaifurrahaman"
 								target="_blank"
@@ -94,16 +83,27 @@ const About = () => {
 								<FaFacebookF />
 							</a>
 						</motion.li>
+						<motion.li
+							whileHover={{
+								y: -6,
+								boxShadow: "0px 0px 10px rgba(200, 200, 200, .4)",
+							}}
+							className="social-item"
+						>
+							<a href="https://www.instagram.com/tashfim_bobi/" className="social-link">
+								<AiOutlineInstagram />
+							</a>
+						</motion.li>
 					</ul>
 				</div>
 
 				<div className="contact-group">
 					<h5 className="contact-text">Contact me here!</h5>
 					<p>
-						Email: <a href="#">md.saifurrahaman.cse@gmail.com</a>
+						Email: <a href="#">mdsaifurrahaman505@gmail.com</a>
 					</p>
 					<p>
-						Phone: <a href="#">+880 1627383279</a>
+						Phone: <a href="#">+880 1864611120</a>
 					</p>
 				</div>
 			</motion.div>
