@@ -25,12 +25,12 @@
 				margin-bottom: 2rem;
 				padding: 0.6rem 1rem;
 				font-size: 18px;
-				color: rgba(255, 255, 255, 0.4);
-				border: 1px solid rgba(111, 78, 78, 0.2);
+				color: rgba(255, 255, 255, 0.527);
+				border: 1px solid rgba(136, 179, 163, 0.575);
 				transition: all 0.2s ease;
 				font-family: "Poppins", sans-serif;
 				&:focus {
-					border: 1px solid rgba(187, 97, 97, 0.5);
+					border: 1px solid rgba(0, 255, 234, 0.74);
 				}
 			}
 
@@ -40,7 +40,7 @@
 
 			.btn-send {
 				color: rgba(255, 255, 255, 0.659);
-				border: 1px solid rgba(111, 78, 78, 0.2);
+				border: 1px solid rgba(136, 179, 163, 0.575);
 				background-color: transparent;
 				padding: 0.7rem 2rem;
 				font-size: 18px;

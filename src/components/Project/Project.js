@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ProjectItem from "./ProjectItem";
-import axios from "axios";
 import Projectdata from "./ProjectData";
 
 const Project = () => {
@@ -13,8 +12,6 @@ const Project = () => {
 		setData(filterdCategory)
 
 	}
-
-	console.log(data);
 
 	return (
 		<section id="project">

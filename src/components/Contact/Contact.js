@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import axios from "axios";
 import { ReactComponent as Message } from "./Message.svg";
 import { ReactComponent as Arrow } from "./Arrow.svg";
 import emailjs from 'emailjs-com';
@@ -13,7 +12,7 @@ const Contact = ({ setSent }) => {
 		emailjs.sendForm('service_wkteyb4', 'template_kn2soop', form.current, 'user_b4OtGcHQRyas1bN3hRaBM')
 			.then((result) => {
 				if (result?.status === 200) {
-					swal("Good job!", "Email sent successfully!", "success");
+					swal("Thanks for your concern!", "Email sent successfully!", "success");
 				}
 				e.target.reset()
 			}, (error) => {
