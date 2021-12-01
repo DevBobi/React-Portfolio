@@ -113,20 +113,17 @@
 
 	@media screen and (max-width: 768px) {
 		column-gap: 0rem;
-		// height: 700px;
-		padding: 2rem 1rem;
+		display: block;
 		grid-template-columns: 1fr;
+		overflow-x: hidden;
 
 		.about-img {
 			height: auto;
 			max-width: 500px;
-			margin: 0 auto;
 			margin-top: 1rem;
 		}
 
 		.about-info {
-			padding: 1rem;
-
 			.info-text-bold {
 				font-size: 5em;
 			}

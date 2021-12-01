@@ -91,6 +91,7 @@
 
 			@media screen and (max-width: 550px) {
 				grid-template-columns: 1fr;
+				overflow-x: hidden;
 			}
 		}
 	}
