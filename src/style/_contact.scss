@@ -26,11 +26,11 @@
 				padding: 0.6rem 1rem;
 				font-size: 18px;
 				color: rgba(255, 255, 255, 0.527);
-				border: 1px solid rgba(136, 179, 163, 0.575);
+				border: 1px solid rgba(221, 221, 221, 0.952);
 				transition: all 0.2s ease;
 				font-family: "Poppins", sans-serif;
 				&:focus {
-					border: 1px solid rgba(0, 255, 234, 0.74);
+					border: 1px solid rgba(0, 255, 234, 0.904);
 				}
 			}
 
@@ -40,7 +40,7 @@
 
 			.btn-send {
 				color: rgba(255, 255, 255, 0.659);
-				border: 1px solid rgba(136, 179, 163, 0.575);
+				border: 1px solid rgba(221, 221, 221, 0.952);
 				background-color: transparent;
 				padding: 0.7rem 2rem;
 				font-size: 18px;
@@ -57,7 +57,7 @@ box-shadow: w;
 
 				&:hover {
 					filter: brightness(1.2);
-					border: 1px solid #78003caf;
+					border: 1px solid rgba(0, 255, 234, 0.904);
 				}
 
 				@media screen and (max-width: 600px) {
