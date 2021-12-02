@@ -32,14 +32,14 @@ nav {
 			.nav-item {
 				.nav-link {
 					font-size: 1rem;
-					color: rgb(172, 249, 255);
-					font-weight: 300;
+					color: rgb(236, 255, 253);
+					font-weight: 350;
 					padding: 0.25rem 1rem;
 					position: relative;
 					cursor: pointer;
 
 					&.active {
-						color: #fff2f2;
+						color: #00f7ff;
 						font-weight: 400;
 
 						&::after {
@@ -50,7 +50,7 @@ nav {
 							width: 100%;
 							height: 100%;
 							transition: all 0.25s ease-in-out;
-							background-color: #78001ab6;
+							// background-color: #78001ab6;
 							border-radius: 5px;
 							z-index: -1;
 						}
