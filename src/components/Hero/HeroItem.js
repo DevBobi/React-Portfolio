@@ -21,15 +21,15 @@ const HeroItem = () => {
 						<span
 							style={{
 								// display: "inline-block",
-								backgroundColor: "yellow",
+								backgroundColor: "#40e0d0",
 								color: "#000",
 								width: "fit-content",
-								padding: "0 .5rem",
+								padding: "0 .3rem",
 								margin: "0 .3rem",
 								height: "fit-content",
 							}}
 						>
-							Web
+							React
 						</span>{" "}
 						Developer
 					</h2> <br />
