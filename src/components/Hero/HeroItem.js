@@ -7,7 +7,7 @@ const HeroItem = () => {
 
 	return (
 		<div >
-			<div className="hero-item" style={{ marginTop: 70 }}>
+			<div className="hero-item" style={{ marginTop: 60 }}>
 				<Typist
 					avgTypingDelay={100}
 					className="typist"
@@ -15,8 +15,11 @@ const HeroItem = () => {
 						show: false,
 					}}
 				>
+					<h2>
+						Hi!<span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
+					</h2>
 					<h2 className="header">
-						Hi, I am Bobi <Typist.Backspace count={6} delay={400} />{" "}
+						<br />I am Bobi <Typist.Backspace count={6} delay={400} />{" "}
 						<Typist.Delay ms={500} />a{" "}
 						<span
 							style={{
@@ -27,7 +30,16 @@ const HeroItem = () => {
 						>
 							React
 						</span>{" "}
-						Developer
+						<span
+							style={{
+								backgroundColor: "silver",
+								color: "#000",
+
+							}}
+						>
+							Dev
+						</span>
+						eloper
 					</h2> <br />
 					<a
 						role="button" href={resumeLink}
