@@ -11,6 +11,31 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/* --------- */
+/*Scrollbar   */
+/* --------- */
+
+::-webkit-scrollbar {
+	width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #d34115dc;
+	border-radius: 12px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #FF5722;
+	border-radius: 12px;
+  }
+
 .App{
 	text-align: center;
 	// background-color: #212121;

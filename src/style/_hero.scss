@@ -15,7 +15,7 @@
 			width: 100%;
 			.header {
 				font-size: 4em;
-				margin-bottom: 3rem;
+				margin-bottom: 2rem;
 				letter-spacing: 2px;
 			}
 			
@@ -35,8 +35,7 @@
 		}
 
 		@media screen and (max-width: 768px) {
-			height: 400px;
-			margin-left: 0px;
+			height: 600px;
 			.typist {
 				.header {
 					font-size: 3.2rem;
