@@ -1,7 +1,6 @@
 #hero {
 	height: 600px;
 	color: honeydew;
-	display: flex;
 	align-items: center;
 
 	.hero-item {
@@ -12,10 +11,8 @@
 		padding: 1.2rem;
 		text-align: center;
 		height: 600px;
-		margin-left: 100px;
 		.typist {
 			width: 100%;
-
 			.header {
 				font-size: 4em;
 				margin-bottom: 3rem;
@@ -42,7 +39,7 @@
 			margin-left: 0px;
 			.typist {
 				.header {
-					font-size: 3em;
+					font-size: 3.2rem;
 				}
 			}
 		}

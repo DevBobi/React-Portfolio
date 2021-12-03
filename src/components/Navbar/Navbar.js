@@ -26,7 +26,18 @@ const Navbar = ({ scrollActive, setScrollActive, onClick }) => {
 		<nav className={`${scrollActive ? "active" : ""}`}>
 			<div className="nav-container">
 				<h2 className="nav-logo" onClick={onClick}>
-					Dev<span>Bobi</span>
+
+					<span
+						style={{
+							backgroundColor: "#FF5722",
+							color: "#000",
+							borderRadius: "2px"
+
+						}}
+					>
+						Dev
+					</span>
+					<span>Bobi</span>
 				</h2>
 				<ul className="nav-menu">
 					<li className="nav-item">
