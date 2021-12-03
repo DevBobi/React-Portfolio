@@ -13,7 +13,7 @@ const Projectdata = [
         image: 'https://i.ibb.co/1RH6q28/Tour-X.jpg',
         title: 'TourX',
         tech: 'React, API,Material-UI',
-        demo: 'https://ecstatic-euclid-d47142.netlify.app/',
+        demo: 'https://tour-x-40f10.web.app/',
         github: 'https://github.com/DevBobi/TourX-Client-ReactJS',
         category: 'react'
     },
