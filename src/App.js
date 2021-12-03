@@ -58,17 +58,17 @@ function App() {
 							params={{
 								"particles": {
 									"color": {
-										"value": "#40e0d0"
+										"value": "#FF5722"
 									},
 									"line_linked": {
-										"color": "#20b2aa"
+										"color": "#FF5722"
 									},
 									"number": {
-										"value": 50
+										"value": 30
 
 									},
 									"size": {
-										"value": 4
+										"value": 5
 									}
 								},
 								"interactivity": {

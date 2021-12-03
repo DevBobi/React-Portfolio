@@ -16,7 +16,8 @@ const HeroItem = () => {
 					}}
 				>
 					<h2 className="header">
-						Hi, I am Bobi <Typist.Backspace count={6} delay={400} />{" "}
+						Hi, I am Bobi
+						<Typist.Backspace count={6} delay={400} />{" "}
 						<Typist.Delay ms={500} />a{" "}
 						<span
 							style={{
@@ -37,8 +38,8 @@ const HeroItem = () => {
 						role="button" href={resumeLink}
 						target="_blank">
 						<Button
-							className="btn-send"
-							variant="outline-info">
+							className="resume-btn text-center"
+						>
 							My Resume
 						</Button>
 					</a>
