@@ -29,7 +29,7 @@ const Navbar = ({ scrollActive, setScrollActive, onClick }) => {
 
 					<span
 						style={{
-							backgroundColor: "#FF5722",
+							backgroundColor: "#40e0d0",
 							color: "#000",
 							borderRadius: "2px"
 

@@ -25,7 +25,7 @@ function App() {
 		setLoading(true)
 		setTimeout(() => {
 			setLoading(false)
-		}, 3000)
+		}, 2000)
 	}, [])
 
 	const [scrollActive, setScrollActive] = useState(false);
@@ -43,7 +43,7 @@ function App() {
 						<FadeLoader
 							color={"#E58F00"}
 							loading={loading}
-							size={25} />
+							size={15} />
 					</div>
 					:
 					<div className="main">
@@ -58,18 +58,21 @@ function App() {
 							params={{
 								"particles": {
 									"color": {
-										"value": "#FF5722"
+										"value": "#85E3BD"
 									},
 									"line_linked": {
-										"color": "#FF5722"
+										"color": "#40e0d0"
 									},
 									"number": {
 										"value": 30
 
 									},
 									"size": {
-										"value": 5
-									}
+										"value": 4
+									},
+									"speed": {
+										"value": 0.1
+									},
 								},
 								"interactivity": {
 									"events": {

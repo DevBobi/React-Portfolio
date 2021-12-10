@@ -19,27 +19,25 @@ const HeroItem = () => {
 						Hi!<span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
 					</h2>
 					<h2 className="header">
-						<br />I am Bobi <Typist.Backspace count={6} delay={400} />{" "}
+						<br />I am Bobi <Typist.Backspace count={6} delay={500} />{" "}
 						<Typist.Delay ms={500} />a{" "}
 						<span
 							style={{
 								backgroundColor: "#40e0d0",
 								color: "#000",
-								paddingInline: ".3rem",
+								paddingInline: ".2rem",
 							}}
 						>
 							React
 						</span>{" "}
+						<br />
 						<span
 							style={{
-								backgroundColor: "silver",
-								color: "#000",
-
+								fontSize: "4.5rem"
 							}}
 						>
-							Dev
+							Developer
 						</span>
-						eloper
 					</h2> <br />
 					<a
 						role="button" href={resumeLink}
