@@ -26,19 +26,18 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-	background: #d34115dc;
+	background: #67b8bb;
 	border-radius: 12px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-	background: #FF5722;
+	background: #8DF0DE;
 	border-radius: 12px;
   }
 
 .App{
 	text-align: center;
-	// background-color: #212121;
 	background: #121212;
 	display: flex;
 	justify-content: center;

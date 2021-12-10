@@ -18,14 +18,16 @@ const HeroItem = () => {
 					<h2>
 						Hi!<span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
 					</h2>
-					<h2 className="header">
+					<h2 style={{
+						fontSize: "3.5rem"
+					}}>
 						<br />I am Bobi <Typist.Backspace count={6} delay={500} />{" "}
 						<Typist.Delay ms={500} />a{" "}
 						<span
 							style={{
-								backgroundColor: "#40e0d0",
+								backgroundColor: "#79CFD2",
 								color: "#000",
-								paddingInline: ".2rem",
+								paddingInline: ".2rem"
 							}}
 						>
 							React

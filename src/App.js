@@ -88,7 +88,7 @@ function App() {
 						<Project />
 						<About />
 						<Tech />
-						<Contact setSent={setSent} />
+						<Contact />
 						<AnimatePresence>
 							{scrollActive && (
 								<ScrollTop onClick={scrollToTop}>

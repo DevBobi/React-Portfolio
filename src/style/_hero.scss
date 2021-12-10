@@ -33,14 +33,5 @@
 					color: aqua;
 				}
 		}
-
-		@media screen and (max-width: 768px) {
-			height: 600px;
-			.typist {
-				.header {
-					font-size: 3.5rem;
-				}
-			}
-		}
 	}
 }
