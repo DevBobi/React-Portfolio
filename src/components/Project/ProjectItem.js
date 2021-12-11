@@ -11,7 +11,7 @@ const ProjectItem = ({ image, title, gitURL, visitURL }) => {
 				<div className="project-img">
 					<img src={image} alt={title} />
 				</div>
-				<h3 className="project-title">{title}</h3>
+				<h5 className="text-light fw-light ps-3 pt-3">{title}</h5>
 				<div className="project-control">
 					<a href={visitURL} target="_blank" className="btn-project">
 						<AiOutlineEye /> Visit

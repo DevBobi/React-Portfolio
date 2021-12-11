@@ -13,30 +13,24 @@
 			color: rgb(190, 190, 190);
 			text-align: center;
 			font-weight: lighter;
-			padding: 0;
 			margin-bottom: 3rem;
-			position: relative;
 		}
 
 		.project-group {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 2rem;
-			align-items: stretch;
+			gap: 2.5rem;
 			overflow: hidden;
 			.project-item-wrap {
 				display: flex;
 				flex-direction: column;
-				align-items: stretch;
 				border: 1px solid #ffffff57;
 				position: relative;
 				transition: all 0.2s ease-in-out;
-				box-shadow: 0px 0px 5px rgba(165, 165, 165, 0.829);
+				box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.829);
 				background-color: #121212;
-				
 				.project-img {
 					height: 300px;
-				
 					position: relative;
 					
 					img {
@@ -45,14 +39,6 @@
 						object-fit: cover;
 					}
 				}
-
-				.project-title {
-					font-size: 18px;
-					color: #FF6939;
-					font-weight: lighter;
-					padding: 0.6rem 0.6rem;
-				}
-
 				&:hover {
 					box-shadow: 0px 0px 10px rgba(33, 33, 39, 0.7);
 					transform: translateY(-2%);

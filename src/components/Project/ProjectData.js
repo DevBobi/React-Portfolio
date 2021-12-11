@@ -22,7 +22,7 @@ const Projectdata = [
         image: 'https://i.ibb.co/h8kFYRY/TechEdu.jpg',
         title: 'TechEdu',
         tech: 'React, API,Material-UI',
-        demo: 'https://tour-x-40f10.web.app/',
+        demo: 'https://ecstatic-euclid-d47142.netlify.app/',
         github: 'https://github.com/DevBobi/TourX-Client-ReactJS',
         category: 'react'
     }

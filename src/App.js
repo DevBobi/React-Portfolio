@@ -61,11 +61,10 @@ function App() {
 										"value": "#EB144C"
 									},
 									"line_linked": {
-										"color": "#EB144C"
+										"color": "#ED3976"
 									},
 									"number": {
 										"value": 30
-
 									},
 									"size": {
 										"value": 4

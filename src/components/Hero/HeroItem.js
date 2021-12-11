@@ -27,7 +27,7 @@ const HeroItem = () => {
 							style={{
 								backgroundColor: "#79CFD2",
 								color: "#000",
-								paddingInline: ".2rem"
+								paddingInline: ".3rem"
 							}}
 						>
 							React
