@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Particles from "react-particles-js";
 import { AnimatePresence } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
-import FadeLoader from "react-spinners/FadeLoader";
+import BeatLoader from "react-spinners/BeatLoader";
 // Components
 import About from "./components/About/About";
 import Project from "./components/Project/Project";
@@ -40,10 +40,10 @@ function App() {
 			{
 				loading ?
 					<div className="App">
-						<FadeLoader
-							color={"#E58F00"}
+						<BeatLoader
+							color={"#2CCCE4"}
 							loading={loading}
-							size={15} />
+							size={20} />
 					</div>
 					:
 					<div className="main">
