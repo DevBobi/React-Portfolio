@@ -1,5 +1,14 @@
 const Projectdata = [
     {
+        id: 0,
+        image: 'https://i.ibb.co/KzgBSLN/Charity-Home-2-1.png',
+        title: 'Charity Home',
+        tech: 'React, TypeScript,TailwindCSS,Stripe',
+        demo: 'https://charity-home.vercel.app/',
+        github: 'https://github.com/shakilhossain-cse/Charity-Client',
+        category: 'react'
+    },
+    {
         id: 1,
         image: 'https://i.ibb.co/3WcPbWg/SneakHub.jpg',
         title: 'SneakHub (MERN Stack)',

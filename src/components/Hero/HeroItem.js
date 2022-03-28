@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Button } from "react-bootstrap";
 import Typist from "react-typist";
-const resumeLink = "https://drive.google.com/file/d/1Hwg0NPynGtaqBzDbqpitgVG3n_OSWvsv/view?usp=sharing";
+const resumeLink = "https://drive.google.com/file/d/1id10WstcSfio79oxBdCBgmav_4OfB7aP/view?usp=sharing";
 
 const HeroItem = () => {
 
