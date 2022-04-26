@@ -9,7 +9,9 @@ import {
 	SiRedux,
 	SiFirebase,
 	SiNodeDotJs,
-	SiMongodb
+	SiMongodb,
+	SiGatsby,
+	SiSvelte
 } from "react-icons/si";
 
 export const techObj = [
@@ -27,7 +29,7 @@ export const techObj = [
 	},
 	{
 		icon: <SiTailwindcss />,
-		text: "Tailwind",
+		text: "TailwindCSS",
 	},
 	{
 		icon: <SiMaterialUi />,
@@ -39,7 +41,7 @@ export const techObj = [
 	},
 	{
 		icon: <SiReact />,
-		text: "React",
+		text: "ReactJS",
 	},
 	{
 		icon: <SiRedux />,
@@ -56,5 +58,9 @@ export const techObj = [
 	{
 		icon: <SiFirebase />,
 		text: "Firebase",
+	},
+	{
+		icon: <SiGatsby />,
+		text: "Gatsby",
 	},
 ];

@@ -100,7 +100,7 @@ const About = () => {
 				<div className="contact-group">
 					<h5 className="contact-text">Contact me here!</h5>
 					<p>
-						Email: <a href="#">mdsaifurrahaman505@gmail.com</a>
+						Email: <a href="#">mdsaifurrahaman769@gmail.com</a>
 					</p>
 					<p>
 						Phone: <a href="#">+880 1864611120</a>
