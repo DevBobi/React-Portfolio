@@ -2,7 +2,7 @@ const Projectdata = [
     {
         id: 0,
         image: 'https://i.ibb.co/KzgBSLN/Charity-Home-2-1.png',
-        title: 'Charity Home',
+        title: 'Charity Home(On Going)',
         tech: 'React, TypeScript,TailwindCSS,Stripe',
         demo: 'https://charity-home.vercel.app/',
         github: 'https://github.com/shakilhossain-cse/Charity-Client',
@@ -17,15 +17,15 @@ const Projectdata = [
         github: 'https://github.com/DevBobi/SneakHub-Client-ReactJS',
         category: 'react'
     },
-    {
-        id: 2,
-        image: 'https://i.ibb.co/X41zp2X/Aerial-Aspects.jpg',
-        title: 'Aerial Aspects (MERN Stack)',
-        tech: 'React, Bootstrap',
-        demo: 'https://aerial-aspects.web.app/',
-        github: 'https://github.com/DevBobi/Aerial-Aspects-Client',
-        category: 'react'
-    },
+    // {
+    //     id: 2,
+    //     image: 'https://i.ibb.co/X41zp2X/Aerial-Aspects.jpg',
+    //     title: 'Aerial Aspects (MERN Stack)',
+    //     tech: 'React, Bootstrap',
+    //     demo: 'https://aerial-aspects.web.app/',
+    //     github: 'https://github.com/DevBobi/Aerial-Aspects-Client',
+    //     category: 'react'
+    // },
     {
         id: 3,
         image: 'https://i.ibb.co/1RH6q28/Tour-X.jpg',
